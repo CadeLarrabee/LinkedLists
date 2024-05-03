@@ -1,13 +1,8 @@
-import "./style.css";
-import { Project } from "./projectModule.js";
-import { Task } from "./taskModule.js";
-import { DomController } from "./DomManip.js";
-import { format } from "date-fns";
+import { LinkedList } from "./linkedListModule.js";
+import { Node } from "./nodeModule.js";
 
 function OnEntry() {
-  const DomManip = new DomController();
-
-  DomManip.GenerateOnEntry();
+  //Generate a linked list here.
 }
 
 OnEntry();
