@@ -1,4 +1,3 @@
-import { parse } from "date-fns";
 export class Node {
   //
   //A node is a basic data structure that knows two things.
@@ -7,26 +6,17 @@ export class Node {
   //Whether it is a head node, or a tail node.
   //Tail nodes have no next, and head nodes have no previous.
   //
-  constructor(isHead, isTail, Data, nextNode, prevNode) {
-    isHead = this.isHead;
-    isTail = this.isTail;
+  constructor(Data, nextNode, prevNode) {
     Data = this.data;
     nextNode = this.nextNode;
     prevNode = this.prevNode;
   }
   displayNodeDetails() {
-    console.log(this.Data, this.prevNode, this.nextNode);
+    console.log(this.Data, this.nextNode, this.prevNode);
   }
   //
   // Getters
   //
-  getIsHead() {
-    return this.isHead;
-  }
-
-  getIsTail() {
-    return this.isTail;
-  }
 
   getData() {
     return this.data;
@@ -43,13 +33,6 @@ export class Node {
   //
   // Setters
   //
-  setIsHead(isHead) {
-    this.isHead = isHead;
-  }
-
-  setIsTail(isTail) {
-    this.isTail = isTail;
-  }
 
   setData(data) {
     this.data = data;
